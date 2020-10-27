@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_flexible_content_modules_rich_text_components",
+  "info": {
+    "name": "RichTextComponent",
+    "icon": "keyboard"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

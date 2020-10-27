@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "primary_navigation_links",
+  "info": {
+    "name": "Primary Navigation Link"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "PageLink": {
+      "model": "page"
+    }
+  }
+}

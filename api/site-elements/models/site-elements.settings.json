@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_elements",
+  "info": {
+    "name": "Site Elements"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "SiteName": {
+      "type": "string"
+    },
+    "ContactEmail": {
+      "type": "email"
+    },
+    "SiteLogo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

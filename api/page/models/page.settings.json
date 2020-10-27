@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "PageTitle": {
+      "type": "string"
+    },
+    "PageContent": {
+      "type": "text",
+      "private": false
+    },
+    "CTALink": {
+      "type": "string",
+      "private": false
+    },
+    "RelatedPages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-components.related-pages-component"
+    },
+    "Handle": {
+      "type": "uid",
+      "targetField": "PageTitle",
+      "required": true
+    },
+    "FlexibleContentModules": {
+      "type": "dynamiczone",
+      "components": [
+        "flexible-content-modules.text-image-component",
+        "flexible-content-modules.rich-text-component"
+      ]
+    }
+  }
+}

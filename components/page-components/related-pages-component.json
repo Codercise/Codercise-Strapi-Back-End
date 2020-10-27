@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_components_related_pages_components",
+  "info": {
+    "name": "RelatedPagesComponent",
+    "icon": "copy"
+  },
+  "options": {},
+  "attributes": {
+    "pages": {
+      "collection": "page"
+    },
+    "RelatedPagesTitle": {
+      "type": "string"
+    }
+  }
+}
